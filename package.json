@@ -2,6 +2,10 @@
   "name": "bun-demo",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "build": "bun build src/server.ts --outdir dist",
+    "start": "bun run src/server.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -9,6 +13,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "bun": "^1.1.38",
     "bun-types": "^1.1.38"
   }
 }
